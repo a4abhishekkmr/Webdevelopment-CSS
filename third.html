@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<title>12th November practice</title>
+<head>
+
+<!-- Body background -->
+<style>
+body{
+  background-color: black;
+  background-image: url("dr.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+background-attachment: fixed;
+margin-right:200px;
+}
+</style>
+
+
+<!-- Links -->
+<style>
+a.one:link, a.one:visited{
+  background-color: red;
+  color:white;
+  padding: 14px 20px; text-decoration: undeerline;}
+}
+</style>
+
+<style>
+a.one:hover{
+  background-color: orange;
+  color:white;
+  padding: 14px 20px; text-decoration: none;}
+}
+</style>
+
+<style>
+a.one:active{
+  background-color: violet;
+  color:white;
+  padding: 14px 20px; text-decoration: none;}
+}
+</style>
+
+
+<style>
+div{text-align:center}
+</style>
+
+<!-- TAble in html OL+ul -->
+<style>
+ol{
+  background: lightblue; padding : 25px;list-style-type: upper-roman;
+}
+ul{
+  background: lightgreen; padding : 20px;list-style-image: url('ic.jpg'); height="5px";width="5px";
+}
+
+ol li{
+  background: DodgerBlue; padding : 10px;
+}
+ul li{
+  background: ForestGreen; padding : 5px;
+}
+</style>
+
+<!-- Addeing a table in webpage -->
+<style>
+table{  border: 10px solid white; margin:auto;}
+th, td {
+  border: 5px solid green;
+  padding: 15px;color: white;
+}
+tr:nth-child(even){background-color: DarkSlateGray;}
+tr:nth-child(odd){background-color: DimGray;}
+tr:hover{background-color:black}
+</style>
+
+<!-- Fixed text on webpage -->
+<style>
+div.fixed{
+  position:fixed;
+  bottom:0;right:0;
+  width:300px;
+  border:3px double #73AD21;
+}
+</style>
+
+<!-- Stickyy -->
+
+<style>
+div.sticky{
+  position: -webkit-sticky;
+  position: sticky;top:0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border:3px double #4CAF50;
+}
+</style>
+<!--
+Picture me text -->
+<style>
+.container {
+  position: relative;
+}
+
+.bottomleft{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+img{
+  width: 100%;
+  height: 700px;
+  opacity: 0.3;
+}
+</style>
+
+</head>
+<!-- ============================================================================= -->
+<body>
+
+<!-- Sticky -->
+
+<div class="sticky"> Hey, there how may i help you, You can go to Google search bar from here>
+</div>
+
+
+<!-- Links -->
+<div>
+<h2 style="color:green;"> Link used as a button</h2>
+<p style="color:blue;"> If you wanna redirect to www.google.com to search any thing
+   in new window then click here</p>
+<a class="one" href="https://www.google.com" target="_blank">Google search+</a>
+
+<!-- Cursor  style -->
+<br>
+<h1 style="color:yellow;"> Let's have a magic... </h1>
+<h2 style="color:lightgreen;">I am going to change your cursor style..</h2>
+<h3 style="color:lightgreen;">just hover into the texts below</h3>
+<span style="color:Chartreuse;cursor:auto">auto</span><br>
+<span style="color:Chartreuse;cursor:crosshair">crosshair</span><br>
+<span style="color:Chartreuse;cursor:default">default</span><br>
+<span style="color:Chartreuse;cursor:e-resize">e-resize</span><br>
+<span style="color:Chartreuse;cursor:help">help</span><br>
+<span style="color:Chartreuse;cursor:move">move</span><br>
+<span style="color:Chartreuse;cursor:n-resize">n-resize</span><br>
+<span style="color:Chartreuse;cursor:ne-resize">ne-resize</span><br>
+<span style="color:Chartreuse;cursor:nw-resize">nw-resize</span><br>
+<span style="color:Chartreuse;cursor:pointer">pointer</span><br>
+<span style="color:Chartreuse;cursor:progress">progress</span><br>
+<span style="color:Chartreuse;cursor:s-resize">s-resize</span><br>
+<span style="color:Chartreuse;cursor:se-resize">se-resize</span><br>
+<span style="color:Chartreuse;cursor:sw-resize">sw-resize</span><br>
+<span style="color:Chartreuse;cursor:text">text</span><br>
+<span style="color:Chartreuse;cursor:w-resize">w-resize</span><br>
+<span style="color:Chartreuse;cursor:wait">wait</span><br>
+</div>
+<!-- ListS==TAble -->
+<h2 style="color:green;">Debuggers Members</h2>
+<ol>
+  <li>Abhishek-THE WORLD'S LARGEST WEB DEVELOPER</li>
+  <li>Akshay-THE WORLD'S LARGEST WEB DEVELOPER</li>
+  <li>Shreya-THE WORLD'S LARGEST WEB DEVELOPER</li>
+</ol>
+<ul>
+  <li>Abhishek-THE WORLD'S LARGEST WEB DEVELOPER</li>
+  <li>Akshay-THE WORLD'S LARGEST WEB DEVELOPER</li>
+  <li>Shreya-THE WORLD'S LARGEST WEB DEVELOPER</li>
+</ul>
+
+<div>
+<h2 style="color:green;">Debuggers Members with Firstname and LAst name</h2>
+<!-- Table -->
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Abhishek</td>
+    <td>Kumar</td>
+  </tr>
+  <tr>
+    <td>Akshay</td>
+    <td>Anil</td>
+  </tr>
+  <tr>
+    <td>Shreya</td>
+    <td>Kumari</td>
+  </tr>
+</table>
+
+</div>
+<br>
+<p style="color:green;">Added some text to an image in the bottom left corner:</p>
+
+<div class="container">
+  <img src="unsplash.jpg" alt="Cinque Terre" width="1000" height="3000">
+  <div class="bottomleft"; style="color:green; > See you Next day.. bye bye </div>
+
+<div class="fixed">
+<h2 style="color:yellow;text-shadow:4px 4px 8px green"> Copyright@a4abhishek</h2>
+</div>
+
+</body>
+</html>
