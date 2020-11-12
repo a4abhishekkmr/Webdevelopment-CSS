@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Style for paragraph -->
+<style>
+p {
+    color: red; text-align: center;
+}
+</style>
+
+<!-- Selectors with id part -->
+<style>
+#idhai {
+  text-align:center;color:red;
+}
+</style>
+
+<!-- Selectors with one and two numbers -->
+<style>
+p.class1 {
+  text-align: center;color : green;
+}
+</style>
+<style>
+p.class2 {
+  text-align: center;font-size: 200%;
+}
+</style>
+
+<!-- New thing -->
+<!-- The CSS rule below will affect every HTML element on the page:
+
+* {
+  text-align: center;
+  color: blue;
+} -->
+
+<!-- Grouping Selectors -->
+<style>
+h3,h4,h5,h6 {
+  text-align: center;color : White;
+}
+</style>
+
+<!-- BAckground color and opacity-->
+<style>
+h3{
+  background-color : FireBrick;
+}
+div{
+  background-color : LightSeaGreen;
+}
+h5{
+  background-color : FireBrick;opacity: 0.8;
+}
+</style>
+
+<!-- Body BAckground image -->
+<style>
+body{
+  background-color: black;
+  background-image: url("dr.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+background-attachment: fixed;
+margin-right:200px;
+}
+</style>
+
+
+<!-- Borders all -->
+<style>
+p.border {border-style: dotted;border-width: medium thick thin thick;
+border-color:Cyan;border-left-style: solid;border-radius: 10px;}
+/* top right bottom left */
+</style>
+<style>
+div{
+  border:5px White; margin: 0 20px 0 20px; background-color: LightSalmon;
+  padding-top: 5px;
+}</style>
+
+<!-- Box model -->
+<style>
+h2{
+  background-color: khaki;
+  width:150px;
+  height:220px;
+  border: 15px solid green;
+  padding :20px;
+  margin:auto;
+}
+</style>
+
+<!-- New Border style -->
+<style>
+p.m1{
+  border: 6px pink;
+  outline-style: double;
+  outline-color: red;
+  outline-width: medium;
+}
+</style>
+
+<style>
+p.m2{
+  border: 6px pink;
+  outline-style: double;
+  outline-color: red;
+  outline-width: medium;
+  text-align:right;
+}
+</style>
+
+<!-- Justification -->
+<style>
+div.11{
+  outline-style: double;
+  outline-color: red;
+ padding: 10px;
+ width: 200px;
+ height: 200px;
+ text-align: justify;
+ text-decoration: underline;
+}
+</style>
+
+<style>
+div.10{
+  outline-style: double;
+  outline-color: red;
+ padding: 10px;
+ width: 200px;
+ height: 200px;
+text-decoration: line-through;
+}
+
+div.aa{
+  text-decoration: line-through;
+}
+</style>
+
+<!-- Picture with text alignment -->
+<style>
+img.top{vertical-align:top}
+img.middle{vertical-align:middle}
+img.bottom{vertical-align:bottom}
+</style>
+
+<!-- Shaddoooowoowwww -->
+<style>
+h1.ap{
+  text-shadow: 4px 4px 8px green;
+  text-align:right;
+  /* color:green; */
+}
+</style>
+
+
+</head>
+
+<body>
+ <!-- Style for paragraph -->
+  <p>Helllo there</p>
+  <p> Be happy always</p>
+
+ <!-- Selectors with id part -->
+<p id="idhai"> Believe me,</p>
+<p> I used to smile always. </p>
+
+
+<!-- Selectors with one and two numbers -->
+<p class="class1"> Again i am telling,</p>
+
+<p class="class1 class2"> happy coding</p>
+
+<!-- Grouping selectors with backgrounds-->
+<div>
+<h3>Grouped the selectors from h6+background withoutopacity</h3>
+<h4>Grouped the selectors from h4+background</h4>
+<h5>Grouped the selectors from h5 wibackground</h5>
+<h6>Grouped the selectors from h6+background</h6>
+</div>
+
+<p class="border">This is a text written inside border with different size of dotted border- thin thick medium, and will be inside border
+  till how much i have written the text, so i will write extra
+  lines see.</p>
+
+<h2>This text is the content of the box. We have added a 20px padding, auto margin and a 15px green border. </h2>
+
+<p class="m1">A double red outline.</p>
+<p class="m2">A double red outline with lift indentation.</p>
+
+
+<div class="10"> WITHOUT JUSTIFICATION just remember that all the people in this world haven't had the advantages that you've had.</div>
+<br>
+<div class="11"> WITH JUSTIFICATION just remember that all the people in this world haven't had the advantages that you've had.</div>
+
+<p><img src="dr.png" width="50" height="50"> Image with default allignment.</p>
+<p><img class="top" src="dr.png" width="50" height="50"> Image with top allignment.</p>
+<p><img class="middle" src="dr.png" width="50" height="50"> Image with middle allignment.</p>
+<p><img class="bottom" src="dr.png" width="50" height="50"> Image with bottom allignment of text.</p>
+
+<br>
+<div class="aa"> WITH JUSTIFICATION just remember that all the people in this world haven't had the advantages that you've had.</div>
+<br>
+<h1 class="ap"> Copyright@Abhishek</h1>
+
+</body>
+</html>
