@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>day4-13thNov</title>
+
+  <style>
+
+    /* <body BAckground */
+  body{
+    background-color:black;
+  margin:0;
+
+  }
+
+  /* Menu list-top */
+  ul{width:100%;
+    list-style-type:none;
+    margin:0;padding:0;
+    overflow:hidden;
+    color:black;
+    background-color:#333;
+    position:-webkit-sticky;
+    position:sticky;
+    top:0;
+  }
+  li{float:left;}
+
+  li a{
+    display:inline-block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    overflow:auto;
+  }
+
+  li a:hover{
+    background-color: #111;
+  }
+
+  .active{background-color: red;}
+
+  div.base{
+    border:5px White; margin: 0 20px 0 20px; background-color: cyan;
+    padding-top: 5px;
+  }
+  h1{
+    text-align:center;color:Gold; text-shadow: 3px 3px 6px white;
+  }
+
+  h4{
+    text-align:center;color:white;
+  }
+
+
+/* Pseudo Class Hide -- none */
+h3.one{
+  display:none; background-color: yellow; padding 20px;text-align:center;
+}
+
+div:hover h3.one{
+  display: block; padding:16px; text-align:center;font-size:15px;
+}
+
+
+/* Added smiley on heading1 */
+
+h1::before{
+  content:url(11.jpg);
+}
+
+
+/* Colorful SElection */
+h2.select::first Letter
+{
+  color:red; font-size:300%;
+}
+
+
+h2.select::first-line{
+  color: orange;
+  font-variant:small-caps;
+}
+h2.select{
+  color:white;
+}
+h2.select::selection{
+  color:red;
+  background:Indigo;
+}
+
+
+/* Text over Image with rectangualr opacity */
+div.background {
+  background: url(long.jpg);
+  border:2px solid white;
+}
+
+div.transbox{
+  margin:30px;
+  background-color:#ffffff;
+  border: 1px solid gold;
+  opacity:0.6;
+}
+div.transbox:hover{
+  opacity:0.9;
+}
+
+div.transbox p{
+  margin:5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+/* Horizontal Menu bar */
+ul.h{
+  margin-style-type:none;
+  margin:0;
+  padding:0;
+  width:13%;
+  background-color:#333;
+  position:fixed;
+  height:100%;
+  overflow:auto;
+}
+
+li a{
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  overflow:auto;
+}
+
+li a.hactive{
+  background-color:red;}
+
+  li a:hover:not(.hactive) {
+    background-color: #111;
+    color: white;
+  }
+
+
+  div.left{
+    margin-left:13%;
+  }
+
+
+/* Adding automatic incremented counter */
+body{
+  counter-reset:se;
+}
+
+h2.in::before {
+  counter-increment:se;
+  content:"Section" counter(se) ":";
+}
+
+
+</style>
+
+
+<body>
+  <ul class="h">
+  <li><a href="https://github.com/a4abhishekkmr" class="hactive"   target:"_blank";>Github profile-a4abhishekkmr</a></li>
+  <li><a href="https://github.com/a4abhishekkmr/WebDevelopment-html/tree/master/10th%20Nov-day%201"   target:"_blank";>Day 1 practice-(HTML)</a></li>
+  <li><a href="https://github.com/a4abhishekkmr/Webdevelopment-CSS/blob/main/second.html"    target:"_blank";>Day 2 practice(CSS)</a></li>
+  <li><a href="https://github.com/a4abhishekkmr/Webdevelopment-CSS/blob/main/third.html"  target:"_blank";>Day 3 practice(CSS)</a></li>
+  <li><a href="https://github.com/a4abhishekkmr/Webdevelopment-CSS/blob/main/fourth.html"    target:"_blank";>Day 4 practice(CSS)</a></li>
+  <li><a href="https://www.linkedin.com/in/abhishek-kumar-9ab838167"  target:"_blank";>LinkedIn profile</a></li>
+  <li><a href="https://www.quora.com/profile/Abhishek-2654?ch=3&share=e18ff6fe&srid=lWUtT"    target:"_blank";>Quora profile</a></li>
+  </ul>
+  <div class="left">
+  <img src="buzz.jpg" width="100%" height="700px">
+  <ul>
+  <li><a href="https://github.com/a4abhishekkmr" class="active"   target:"_blank";>Github profile-a4abhishekkmr</a></li>
+<li><a href="https://github.com/a4abhishekkmr/WebDevelopment-html/tree/master/10th%20Nov-day%201"   target:"_blank";>Day 1 practice-(HTML)</a></li>
+<li><a href="https://github.com/a4abhishekkmr/Webdevelopment-CSS/blob/main/second.html" class="active"   target:"_blank";>Day 2 practice(CSS)</a></li>
+<li><a href="https://github.com/a4abhishekkmr/Webdevelopment-CSS/blob/main/third.html"  target:"_blank";>Day 3 practice(CSS)</a></li>
+<li><a href="https://github.com/a4abhishekkmr/Webdevelopment-CSS/blob/main/fourth.html" class="active"   target:"_blank";>Day 4 practice(CSS)</a></li>
+<li><a href="https://www.linkedin.com/in/abhishek-kumar-9ab838167"  target:"_blank";>LinkedIn profile</a></li>
+<li><a href="https://www.quora.com/profile/Abhishek-2654?ch=3&share=e18ff6fe&srid=lWUtT" class="active"   target:"_blank";>Quora profile</a></li>
+</ul>
+</div>
+<br><div class="left">
+  <h1 style="color:red; font-family:algerian">DAY 5</h1>
+<h1>Welcome to my journey of web development,<br>
+ it's my fifth day of it, and happy to see this much progress</h1>
+
+ <div><h4> Let's have a intro of myself</h4>
+   <h3 class="one"> My name is Abhishek and I am 3rd Year student pursing B.tech at SRM University.</h3>
+   </div>
+</div>
+<div class="left">
+<p style="color:gold;"> Just reduce or increase the size of the window to see the changed color in first line<p>
+  <p> to see the power of web development just select some text from this text below and see the magic.</p>
+<h2 class="select">Web development is the work involved in developing a Web site for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications, electronic businesses, and social network services.
+  You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter and the first line of a text!
+  See the effect</h2>
+</div>
+<div class="left">
+<!-- Image wla -->
+<div class="background">
+  <div class="transbox">
+    <p> This is some text placed inside this transparent box over image</p>
+    </div>
+    </div>
+<h1>Web DEvelpment </h1>
+<h2 class="in" style="color:white; text-align:center">HTML</h2>
+<h2 class="in" style="color:white; text-align:center">CSS</h2>
+<h2 class="in" style="color:white; text-align:center">JAVAScript</h2>
+<h2 class="in" style="color:white; text-align:center">PHP</h2>
+<br>
+<br>
+
+</div>
+</body>
+</html>
